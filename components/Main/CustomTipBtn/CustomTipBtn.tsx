@@ -12,7 +12,7 @@ export const CustomTipBtn: React.FunctionComponent<Props> = props => {
         <div className={styles.btn_custom_container}>
             <input
                 type="number"
-                title="custom tip"
+                aria-label="custom tip"
                 placeholder="custom"
                 name="custom tip"
                 value={tip}
