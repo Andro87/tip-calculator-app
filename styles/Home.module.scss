@@ -1,0 +1,12 @@
+@use "styles/helpers" as *;
+
+.home_container {
+    background-color: var(--cyan);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint($large) {
+        padding-block: 100px;
+    }
+}

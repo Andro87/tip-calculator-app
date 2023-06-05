@@ -1,0 +1,33 @@
+@use "styles/helpers" as *;
+
+.detail_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        text-transform: capitalize;
+        &:nth-child(1) {
+            color: var(--white);
+            font-size: 1rem;
+            line-height: 1.4375rem;
+        }
+        &:nth-child(2) {
+            color: var(--strong-cyan);
+            font-size: 2rem;
+            line-height: 2.94rem;
+            letter-spacing: -0.67px;
+            @include breakpoint($large) {
+                font-size: 3rem;
+                letter-spacing: -1px;
+            }
+        }
+    }
+
+    span {
+        display: block;
+        color: var(--grayish-cyan);
+        font-size: 0.8125rem;
+        line-height: 1.1875rem;
+        text-transform: none;
+    }
+}

@@ -1,0 +1,8 @@
+@use "styles/helpers" as *;
+
+.header {
+    margin: 50px auto;
+    @include breakpoint($large) {
+        margin: initial auto 80px;
+    }
+}
